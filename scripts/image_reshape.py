@@ -106,8 +106,8 @@ def resize(savedir, NCHW=True, min_size=4, max_size=1024, max_mem=0.8,
 
 
 if __name__ == '__main__':
-    imgdir = input('Image directory: ')
-    savedir = input('Memmap directory: ')
-
+    imgdir = sys.argv[1]
+    savedir = sys.arv[2]
+    
     #generate_square_crops(imgdir, savedir)
     resize(savedir)

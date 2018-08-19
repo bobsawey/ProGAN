@@ -7,8 +7,8 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-subreddit = input('Enter subreddit name: ')
-save_dir = input('Enter name of folder to save images in: ')
+subreddit = raw_input('Enter subreddit name: ')
+save_dir = raw_input('Enter name of folder to save images in: ')
 
 if not os.path.isdir(save_dir):
     os.makedirs(save_dir)
